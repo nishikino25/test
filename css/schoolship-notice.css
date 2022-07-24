@@ -1,0 +1,101 @@
+.schoolship-notice {
+  background: #efeae6;
+  /*flex置中:垂直、水平、排列方式*/
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+}
+
+.notice {
+  color: #9f784f;
+  width: 80vw;
+  margin-top: 30px;
+  text-align: left;
+
+  font-family: Noto Sans CJK TC;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+}
+
+.list {
+  width: 80vw;
+  padding: 10px;
+  display: flex;
+}
+.list_background {
+  background: #9f784f;
+  width: 20px;
+  height: 20px;
+  border-radius: 999em;
+
+  display: flex;
+  align-items: center;
+}
+
+.list_number {
+  margin: auto;
+  color: #efeae6;
+
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 20px;
+}
+
+.list_text {
+  width: 80vw;
+  margin-left: 5px;
+  display: inline-block;
+  text-align: left;
+
+  color: #1e1e1e;
+  font-family: Noto Sans CJK TC;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 20px;
+}
+
+.btn_agree {
+  background-color: #9a9084;
+  color: #efeae6;
+  height: 44px;
+  width: 180px;
+  margin: 40px;
+  text-align: center;
+
+  font-family: Noto Sans CJK TC;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 44px;
+}
+
+.btn_agree:hover {
+  background-color: #1e1e1e;
+  color: #9f784f !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .notice {
+    width: 90vw;
+  }
+  .list {
+    width: 90vw;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .list {
+    width: 95vw;
+    padding: 2px;
+  }
+  .list {
+    width: 85vw;
+  }
+}

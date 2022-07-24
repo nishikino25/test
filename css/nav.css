@@ -1,0 +1,282 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  font-size: 16px;
+}
+
+/* global style */
+body {
+  background-color: #efeae6;
+}
+
+/* global style (end) */
+/* RWD settings */
+.pc {
+  display: none;
+}
+
+.mobile {
+  display: block;
+}
+
+@media screen and (min-width: 1024px) {
+  .pc {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+}
+
+/* RWD settings (end) */
+.nav .nav-head {
+  background-color: #1e1e1e;
+}
+
+.nav .nav-head .pc-background {
+  padding: 15px;
+}
+
+.nav .nav-head .system-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+}
+
+.nav .nav-head .system-name h1 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 1.2rem;
+}
+
+.nav .nav-head .system-name h1 a {
+  color: #9a9084;
+}
+
+.nav .nav-head .system-name #mobile-menu-toggle-button {
+  background-color: transparent;
+  background-image: url("../img/nav/hambuger.svg");
+  border: 0;
+  width: 18px;
+  height: 18px;
+}
+
+.nav .nav-head .system-name #mobile-menu-toggle-button.close {
+  background-image: url("../img/nav/close.svg");
+}
+
+.nav #mobile-nav-body {
+  background-color: white;
+  -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+}
+
+.nav #mobile-nav-body.hidden {
+  display: none;
+}
+
+.nav #mobile-nav-body .profile > * {
+  display: block;
+  margin-bottom: 20px;
+  color: #9a9084;
+}
+
+.nav #mobile-nav-body #logout {
+  color: #1e1e1e;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav .nav-head {
+    background-color: #efeae6;
+    height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav .nav-head .pc-background {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #1e1e1e;
+    height: 60px;
+    border-radius: 0 80px 80px 0;
+    padding-left: 5%;
+  }
+  .nav .nav-head .pc-background img {
+    height: 28px;
+  }
+  .nav .nav-head .pc-background .system-name {
+    margin-top: 0;
+  }
+  .nav .nav-head .pc-background .system-name h1 {
+    margin: 0 30px;
+    font-size: 1.5rem;
+  }
+  .nav .nav-head .profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 5%;
+  }
+  .nav .nav-head .profile p {
+    margin-right: 20px;
+    color: #9f784f;
+  }
+  .nav .nav-head .profile #logout {
+    color: #1e1e1e;
+  }
+}
