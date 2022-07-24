@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("head").load("/layout/head.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="nav"></div>
+    <div id="notification"></div>
+    <div id="footer"></div>
+
+    <script>
+      $(function () {
+        $("#nav").load("/layout/nav.html");
+        $("#notification").load("/schoolship-notice.html");
+        $("#footer").load("/layout/footer.html");
+      });
+    </script>
+  </body>
+</html>

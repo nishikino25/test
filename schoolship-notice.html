@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $("head").load("/layout/head.html");
+    });
+  </script>
+</head>
+
+<body>
+  <div id="nav"></div>
+  <div id="functional-nav" class="pc"></div>
+
+  <div class="schoolship-notice">
+    <div class="notice">注意事項1</div>
+    <div class="list">
+      <div class="list_background">
+        <div class="list_number">1</div>
+      </div>
+      <div class="list_text">
+        本系統獎學金係依服務學習單位完成服務學習時數後填寫。(PS.不設定每月僅能列印一次)
+      </div>
+    </div>
+    <div class="list">
+      <div class="list_background">
+        <div class="list_number">2</div>
+      </div>
+      <div class="list_text">
+        請依服務學習單位規定時間於每月底列印獎學金申報表，並詳核資料是否正確，繳交至服務學習單位，經輔導人員及主管簽核後，送學務處就業輔導組辦理獎學金核發作業，獎學金申請單經服務學習單位確認後，同學即無法再異動獎學金申報表。
+      </div>
+    </div>
+
+    <div class="list">
+      <div class="list_background">
+        <div class="list_number">3</div>
+      </div>
+      <div class="list_text">
+        本系統具自動記錄使用者資料功能，請勿亂填資料，若填報非服務學習資料，將依校規及電信相關法律處理。
+      </div>
+    </div>
+
+    <div class="list">
+      <div class="list_background">
+        <div class="list_number">4</div>
+      </div>
+      <div class="list_text">
+        選擇服務學習單位時請正確選填，例如：學生事務處與學生事務處就業輔導組是兩個不同單位，請勿誤填。
+      </div>
+    </div>
+
+    <div class="list">
+      <div class="list_background">
+        <div class="list_number">5</div>
+      </div>
+      <div class="list_text">
+        若流程有任何問題，請洽學務處朱瑞先生 27376313 chujui@mail.ntust.edu.tw<br>
+        系統操作有任何問題，請洽電算中心系統支援組江仕傑先生 27376207 lambert13@mail.ntust.edu.tw
+      </div>
+    </div>
+
+    <div class="list">
+      <div class="list_background">
+        <div class="list_number">6</div>
+      </div>
+      <div class="list_text">
+        操作步驟：進入服務成長學習獎學金申請系統填寫資料(每月) → 點選「產生申請表」 → 服務學習時數填寫（可每次或每月） → 建立獎學金申報表 → 送服務學習單位審核
+      </div>
+    </div>
+
+    <a class="btn_agree" href="/schoolship-application.html">
+      我已詳细讀完畢
+    </a>
+  </div>
+
+  <div id="footer"></div>
+
+  <script>
+    $(function () {
+      $("#functional-nav").load("/layout/functional-nav.html");
+      $("#nav").load("/layout/nav.html");
+      $("#footer").load("/layout/footer.html");
+    });
+  </script>
+</body>
+
+</html>

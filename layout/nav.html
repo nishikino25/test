@@ -1,0 +1,32 @@
+<header class="nav">
+  <div class="nav-head">
+    <div class="pc-background">
+      <img src="/img/nav/logo.svg" alt="ntust-logo" />
+      <div class="system-name">
+        <h1><a href="/">服務學習獎學金系統</a></h1>
+        <button
+          id="mobile-menu-toggle-button"
+          class="mobile"
+          onclick="toggleMenu()"
+        ></button>
+      </div>
+    </div>
+    <div class="pc profile">
+      <p>王小明</p>
+      <p>資訊管理系</p>
+      <p>B10709000</p>
+      <a id="logout" href="#">登出</a>
+    </div>
+  </div>
+  <div id="mobile-nav-body" class="mobile hidden">
+    <div id="functional-nav" class="mobile"></div>
+    <div class="profile">
+      <p>王小明</p>
+      <p>資訊管理系</p>
+      <p>B10709000</p>
+    </div>
+    <a id="logout" href="#">登出</a>
+  </div>
+</header>
+
+<script src="/js/nav.js" type="text/javascript"></script>

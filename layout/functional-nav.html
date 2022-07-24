@@ -1,0 +1,15 @@
+<div class="functional-nav">
+  <a href="/schoolship-application.html">獎學金申請</a>
+  <a href="/schoolship-statistics.html">獎學金統計</a>
+  <a href="#">學習時數統計及抵免</a>
+</div>
+
+<script>
+  var pathname = window.location.pathname;
+  var links = document.getElementsByTagName("a");
+
+  for (var i = 0; i < 3; i++) {
+    if (links[i].getAttribute("href") === pathname)
+      links[i].classList.add("active");
+  }
+</script>
